@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #F33033;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    width: 350px;
+    height: 480px;
+    padding: 30px;
+    gap: 20px;
+    background: #FFB588;
+}
+.buttons{
+    display: grid;
+    grid-template-columns:repeat(4, 2fr);
+    align-items: center;
+    gap:20px;
+}
+button{
+    background: #F33033;
+    border: none;
+    padding: 10px;
+    height: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    border-radius: 4px;
+    box-shadow: .1rem .4rem black;
+    color: palegreen;
+}
+#header{
+    text-align: end;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    opacity: .5;
+}
+#res{
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+#clear-btn, #calculate-btn{
+    background: white;
+}
+
+/*media query*/
+@media screen and (max-width: 578px) {
+    body{
+        background: #F33033;
+    }
+    .container{
+        height: 110vh;
+    }
+    .content-wrapper {
+        background: none;
+        padding: 0;
+    }
+    button{
+        background: #FFB588;
+        color: black;
+    }
+}
